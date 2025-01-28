@@ -1,0 +1,131 @@
+[Frame 30] Birth: speed=0.90, diet=1, fear=0.10, mutation=minor
+[Frame 30] Death: hunted (speed=2.40)
+[Frame 30] Birth: speed=1.80, diet=1, fear=0.09, mutation=minor
+[Frame 30] Death: hunted (speed=2.39)
+[Frame 30] Death: hunted (speed=4.35)
+[Frame 30] Birth: speed=1.77, diet=1, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=1.55, diet=1, fear=0.13, mutation=minor
+[Frame 30] Birth: speed=1.56, diet=1, fear=0.06, mutation=minor
+[Frame 30] Birth: speed=1.43, diet=1, fear=0.15, mutation=minor
+[Frame 30] Death: hunted (speed=3.90)
+[Frame 30] Birth: speed=1.46, diet=1, fear=0.18, mutation=minor
+[Frame 30] Birth: speed=1.73, diet=1, fear=0.22, mutation=minor
+[Frame 30] Birth: speed=1.14, diet=1, fear=0.17, mutation=minor
+[Frame 30] Birth: speed=2.44, diet=1, fear=0.16, mutation=minor
+[Frame 30] Death: hunted (speed=4.35)
+[Frame 30] Death: hunted (speed=1.31)
+[Frame 30] Death: hunted (speed=2.72)
+[Frame 30] Birth: speed=1.30, diet=1, fear=0.11, mutation=minor
+[Frame 30] Birth: speed=5.83, diet=1, fear=0.15, mutation=minor
+[Frame 30] Birth: speed=2.00, diet=1, fear=0.09, mutation=minor
+[Frame 30] Death: hunted (speed=1.31)
+[Frame 30] Birth: speed=1.60, diet=1, fear=0.06, mutation=minor
+[Frame 30] Death: hunted (speed=1.41)
+[Frame 30] Death: hunted (speed=2.72)
+[Frame 30] Birth: speed=5.96, diet=1, fear=0.21, mutation=minor
+[Frame 30] Death: hunted (speed=1.81)
+[Frame 30] Birth: speed=1.14, diet=1, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=1.77, diet=1, fear=0.10, mutation=minor
+[Frame 30] Birth: speed=1.56, diet=1, fear=0.07, mutation=minor
+[Frame 30] Birth: speed=2.44, diet=1, fear=0.12, mutation=minor
+[Frame 30] Birth: speed=1.54, diet=1, fear=0.23, mutation=minor
+[Frame 30] Birth: speed=2.43, diet=1, fear=0.16, mutation=minor
+[Frame 30] Birth: speed=2.16, diet=1, fear=0.16, mutation=minor
+[Frame 30] Birth: speed=1.79, diet=1, fear=0.11, mutation=minor
+[Frame 30] Birth: speed=4.24, diet=1, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=1.44, diet=1, fear=0.22, mutation=minor
+[Frame 30] Birth: speed=1.33, diet=0, fear=0.07, mutation=minor
+[Frame 30] Birth: speed=1.79, diet=1, fear=0.12, mutation=minor
+[Frame 30] Birth: speed=1.45, diet=1, fear=0.18, mutation=minor
+[Frame 30] Birth: speed=2.38, diet=1, fear=0.10, mutation=minor
+[Frame 30] Birth: speed=2.09, diet=1, fear=0.15, mutation=minor
+[Frame 30] Birth: speed=1.54, diet=1, fear=0.18, mutation=minor
+[Frame 30] Birth: speed=1.49, diet=1, fear=0.17, mutation=minor
+[Frame 30] Birth: speed=1.50, diet=1, fear=0.19, mutation=minor
+[Frame 30] Birth: speed=1.64, diet=0, fear=0.09, mutation=minor
+[Frame 30] Death: hunted (speed=5.14)
+[Frame 30] Birth: speed=7.23, diet=1, fear=0.16, mutation=minor
+[Frame 30] Death: hunted (speed=1.31)
+[Frame 30] Birth: speed=1.79, diet=1, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=1.99, diet=1, fear=0.13, mutation=minor
+[Frame 30] Birth: speed=2.17, diet=1, fear=0.05, mutation=minor
+[Frame 30] Birth: speed=2.20, diet=1, fear=0.18, mutation=minor
+[Frame 30] Birth: speed=1.21, diet=1, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=2.86, diet=0, fear=0.16, mutation=minor
+[Frame 30] Birth: speed=7.69, diet=0, fear=0.17, mutation=speed_shift
+[Frame 30] Birth: speed=3.10, diet=1, fear=0.03, mutation=minor
+[Frame 30] Birth: speed=3.20, diet=1, fear=0.14, mutation=minor
+[Frame 30] Birth: speed=4.31, diet=1, fear=0.21, mutation=minor
+[Frame 30] Birth: speed=1.21, diet=0, fear=0.22, mutation=minor
+[Frame 30] Birth: speed=1.76, diet=1, fear=0.18, mutation=minor
+[Frame 30] Birth: speed=2.11, diet=1, fear=0.13, mutation=minor
+[Frame 30] Birth: speed=0.68, diet=1, fear=0.13, mutation=minor
+[Frame 30] Birth: speed=6.56, diet=1, fear=0.20, mutation=minor
+[Frame 30] Birth: speed=3.60, diet=1, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=1.39, diet=1, fear=0.25, mutation=minor
+[Frame 30] Birth: speed=6.02, diet=1, fear=0.10, mutation=minor
+[Frame 30] Birth: speed=1.46, diet=1, fear=0.14, mutation=minor
+[Frame 30] Birth: speed=2.07, diet=1, fear=0.12, mutation=minor
+[Frame 30] Birth: speed=0.69, diet=1, fear=0.04, mutation=minor
+[Frame 30] Birth: speed=5.60, diet=1, fear=0.12, mutation=minor
+[Frame 30] Birth: speed=1.52, diet=1, fear=0.16, mutation=minor
+[Frame 30] Birth: speed=1.44, diet=1, fear=0.03, mutation=minor
+[Frame 30] Birth: speed=3.62, diet=0, fear=0.11, mutation=minor
+[Frame 30] Birth: speed=0.70, diet=1, fear=0.21, mutation=minor
+[Frame 30] Birth: speed=4.82, diet=0, fear=0.15, mutation=minor
+[Frame 30] Birth: speed=4.80, diet=0, fear=0.10, mutation=minor
+[Frame 30] Birth: speed=7.10, diet=0, fear=0.06, mutation=minor
+[Frame 30] Birth: speed=8.00, diet=0, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=3.08, diet=0, fear=0.04, mutation=minor
+[Frame 30] Birth: speed=2.84, diet=0, fear=0.06, mutation=minor
+[Frame 30] Birth: speed=2.96, diet=0, fear=0.15, mutation=minor
+[Frame 30] Birth: speed=1.68, diet=0, fear=0.06, mutation=minor
+[Frame 30] Birth: speed=7.78, diet=0, fear=0.19, mutation=minor
+[Frame 30] Birth: speed=1.33, diet=0, fear=0.14, mutation=minor
+[Frame 30] Birth: speed=2.18, diet=0, fear=0.10, mutation=minor
+[Frame 30] Birth: speed=6.44, diet=0, fear=0.09, mutation=minor
+[Frame 30] Birth: speed=7.52, diet=0, fear=0.14, mutation=minor
+[Frame 30] Birth: speed=4.29, diet=0, fear=0.00, mutation=minor
+[Frame 30] Birth: speed=1.18, diet=0, fear=0.08, mutation=minor
+[Frame 30] Birth: speed=8.00, diet=0, fear=0.11, mutation=minor
+[Frame 60] Death: hunted (speed=1.74)
+[Frame 60] Birth: speed=8.00, diet=1, fear=0.12, mutation=minor
+[Frame 60] Death: hunted (speed=8.00)
+[Frame 60] Death: hunted (speed=2.71)
+[Frame 60] Death: hunted (speed=5.35)
+[Frame 60] Birth: speed=2.48, diet=1, fear=0.10, mutation=minor
+[Frame 60] Death: hunted (speed=3.80)
+[Frame 60] Birth: speed=7.76, diet=1, fear=0.12, mutation=minor
+[Frame 60] Birth: speed=1.87, diet=1, fear=0.05, mutation=minor
+[Frame 60] Death: hunted (speed=1.49)
+[Frame 60] Death: hunted (speed=1.74)
+[Frame 60] Death: hunted (speed=2.80)
+[Frame 60] Death: hunted (speed=2.34)
+[Frame 60] Birth: speed=7.00, diet=1, fear=0.12, mutation=minor
+[Frame 60] Death: hunted (speed=2.81)
+[Frame 60] Birth: speed=6.84, diet=1, fear=0.12, mutation=minor
+[Frame 60] Birth: speed=1.98, diet=1, fear=0.10, mutation=minor
+[Frame 60] Birth: speed=3.60, diet=1, fear=0.14, mutation=minor
+[Frame 60] Birth: speed=8.00, diet=1, fear=0.08, mutation=minor
+[Frame 90] Death: hunted (speed=1.96)
+[Frame 90] Death: hunted (speed=2.28)
+[Frame 90] Death: hunted (speed=2.28)
+[Frame 90] Death: hunted (speed=1.53)
+[Frame 90] Death: hunted (speed=2.07)
+[Frame 90] Death: hunted (speed=2.84)
+[Frame 90] Death: hunted (speed=1.47)
+[Frame 90] Death: hunted (speed=2.89)
+[Frame 90] Death: hunted (speed=1.71)
+[Frame 120] Death: hunted (speed=1.78)
+[Frame 120] Birth: speed=7.91, diet=1, fear=0.12, mutation=minor
+[Frame 120] Birth: speed=7.41, diet=1, fear=0.12, mutation=minor
+[Frame 120] Death: hunted (speed=7.31)
+[Frame 120] Death: hunted (speed=4.48)
+[Frame 510] Death: starved (speed=1.99)
+[Frame 510] Death: starved (speed=2.04)
+[Frame 510] Death: starved (speed=1.84)
+[Frame 540] Death: starved (speed=1.47)
+[Frame 540] Death: starved (speed=6.47)
+[Frame 540] Death: starved (speed=6.84)
+[Frame 540] Death: starved (speed=1.96)
+[Frame 540] Death: starved (speed=6.90)

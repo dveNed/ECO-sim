@@ -1,0 +1,10 @@
+[Frame 630] Prey died: starved, speed=2.41, age=612
+[Frame 750] Prey died: aged, speed=2.91, age=701
+[Frame 4140] Prey birth: speed=7.58, mutation=minor
+[Frame 4320] Prey died: aged, speed=4.50, age=701
+[Frame 4440] Prey died: starved, speed=7.76, age=80
+[Frame 4950] Prey died: aged, speed=5.63, age=701
+[Frame 5370] Prey birth: speed=7.55, mutation=minor
+[Frame 5520] Prey died: starved, speed=7.74, age=65
+[Frame 5670] Prey birth: speed=8.00, mutation=minor
+[Frame 7050] Prey died: aged, speed=5.60, age=701

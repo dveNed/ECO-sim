@@ -1,0 +1,530 @@
+[Frame 30] Death: hunted (speed=3.98)
+[Frame 30] Birth: speed=2.19, diet=0, size=1.19, fear=0.11, longevity=1.05, mutation=minor
+[Frame 30] Birth: speed=1.81, diet=0, size=0.95, fear=0.16, longevity=0.95, mutation=minor
+[Frame 30] Birth: speed=3.05, diet=0, size=0.59, fear=0.22, longevity=0.80, mutation=minor
+[Frame 30] Birth: speed=1.90, diet=0, size=0.67, fear=0.11, longevity=0.95, mutation=minor
+[Frame 30] Birth: speed=2.33, diet=0, size=1.03, fear=0.00, longevity=0.97, mutation=minor
+[Frame 30] Birth: speed=2.03, diet=0, size=1.18, fear=0.13, longevity=0.85, mutation=minor
+[Frame 30] Birth: speed=1.78, diet=0, size=0.81, fear=0.15, longevity=0.82, mutation=minor
+[Frame 30] Birth: speed=1.33, diet=0, size=1.25, fear=0.00, longevity=1.40, mutation=minor
+[Frame 30] Birth: speed=2.41, diet=0, size=0.68, fear=0.11, longevity=0.85, mutation=minor
+[Frame 30] Birth: speed=0.94, diet=0, size=1.09, fear=0.19, longevity=0.75, mutation=minor
+[Frame 30] Death: hunted (speed=1.59)
+[Frame 30] Birth: speed=2.23, diet=0, size=0.57, fear=0.10, longevity=0.76, mutation=minor
+[Frame 30] Birth: speed=3.48, diet=0, size=0.97, fear=0.00, longevity=1.33, mutation=minor
+[Frame 30] Birth: speed=2.25, diet=0, size=1.06, fear=0.08, longevity=0.90, mutation=minor
+[Frame 30] Birth: speed=1.84, diet=0, size=0.89, fear=0.10, longevity=1.18, mutation=minor
+[Frame 30] Birth: speed=3.11, diet=0, size=0.52, fear=0.22, longevity=1.05, mutation=minor
+[Frame 30] Birth: speed=3.37, diet=0, size=1.01, fear=0.19, longevity=0.59, mutation=minor
+[Frame 30] Birth: speed=1.71, diet=0, size=1.09, fear=0.08, longevity=0.79, mutation=minor
+[Frame 30] Birth: speed=1.69, diet=0, size=0.86, fear=0.11, longevity=1.04, mutation=minor
+[Frame 30] Birth: speed=6.34, diet=0, size=1.24, fear=0.15, longevity=0.73, mutation=minor
+[Frame 30] Birth: speed=3.23, diet=0, size=1.32, fear=0.06, longevity=1.03, mutation=minor
+[Frame 30] Birth: speed=3.83, diet=0, size=1.32, fear=0.12, longevity=1.07, mutation=minor
+[Frame 30] Birth: speed=3.46, diet=0, size=1.18, fear=0.18, longevity=1.17, mutation=minor
+[Frame 30] Birth: speed=3.77, diet=1, size=0.81, fear=0.11, longevity=0.92, mutation=diet_flip
+[Frame 30] Birth: speed=1.62, diet=0, size=0.51, fear=0.09, longevity=1.07, mutation=minor
+[Frame 30] Birth: speed=2.72, diet=0, size=0.50, fear=0.10, longevity=1.36, mutation=minor
+[Frame 30] Death: hunted (speed=1.97)
+[Frame 30] Birth: speed=2.36, diet=0, size=1.16, fear=0.22, longevity=0.85, mutation=minor
+[Frame 30] Birth: speed=2.26, diet=0, size=0.76, fear=0.22, longevity=0.83, mutation=minor
+[Frame 30] Death: hunted (speed=2.15)
+[Frame 30] Birth: speed=2.84, diet=0, size=0.80, fear=0.05, longevity=0.91, mutation=minor
+[Frame 30] Birth: speed=3.34, diet=0, size=1.14, fear=0.10, longevity=0.92, mutation=minor
+[Frame 60] Death: hunted (speed=1.38)
+[Frame 60] Death: hunted (speed=2.66)
+[Frame 60] Death: hunted (speed=1.51)
+[Frame 60] Birth: speed=1.93, diet=0, size=0.89, fear=0.15, longevity=1.07, mutation=minor
+[Frame 60] Death: hunted (speed=2.41)
+[Frame 60] Birth: speed=1.69, diet=0, size=0.73, fear=0.13, longevity=1.20, mutation=minor
+[Frame 60] Birth: speed=2.02, diet=0, size=0.50, fear=0.03, longevity=1.06, mutation=minor
+[Frame 60] Birth: speed=3.79, diet=0, size=1.18, fear=0.08, longevity=1.21, mutation=minor
+[Frame 60] Birth: speed=2.01, diet=0, size=1.07, fear=0.14, longevity=0.97, mutation=minor
+[Frame 60] Birth: speed=7.12, diet=0, size=0.89, fear=0.09, longevity=1.03, mutation=minor
+[Frame 60] Birth: speed=4.54, diet=0, size=0.51, fear=0.09, longevity=1.09, mutation=minor
+[Frame 60] Death: hunted (speed=2.94)
+[Frame 60] Birth: speed=4.06, diet=0, size=0.70, fear=0.19, longevity=0.83, mutation=minor
+[Frame 60] Birth: speed=1.39, diet=0, size=0.74, fear=0.08, longevity=1.24, mutation=minor
+[Frame 60] Death: hunted (speed=1.72)
+[Frame 60] Birth: speed=3.95, diet=0, size=0.50, fear=0.19, longevity=0.90, mutation=minor
+[Frame 60] Birth: speed=1.07, diet=0, size=0.99, fear=0.19, longevity=1.36, mutation=minor
+[Frame 60] Birth: speed=1.99, diet=0, size=0.85, fear=0.15, longevity=1.05, mutation=minor
+[Frame 60] Birth: speed=2.13, diet=0, size=0.81, fear=0.09, longevity=0.96, mutation=minor
+[Frame 60] Birth: speed=2.70, diet=0, size=0.50, fear=0.08, longevity=1.18, mutation=minor
+[Frame 60] Birth: speed=2.09, diet=0, size=1.63, fear=0.13, longevity=1.14, mutation=minor
+[Frame 60] Birth: speed=2.14, diet=0, size=0.86, fear=0.09, longevity=1.04, mutation=minor
+[Frame 60] Birth: speed=3.42, diet=0, size=0.81, fear=0.12, longevity=1.06, mutation=minor
+[Frame 60] Death: hunted (speed=2.15)
+[Frame 60] Birth: speed=3.07, diet=1, size=0.86, fear=0.24, longevity=0.63, mutation=diet_flip
+[Frame 60] Birth: speed=1.61, diet=0, size=0.97, fear=0.03, longevity=1.06, mutation=minor
+[Frame 60] Birth: speed=1.81, diet=0, size=0.70, fear=0.17, longevity=1.41, mutation=minor
+[Frame 60] Death: hunted (speed=6.13)
+[Frame 60] Birth: speed=2.57, diet=0, size=0.61, fear=0.08, longevity=1.10, mutation=minor
+[Frame 60] Birth: speed=1.27, diet=0, size=1.19, fear=0.13, longevity=0.73, mutation=minor
+[Frame 90] Birth: speed=1.86, diet=1, size=1.08, fear=0.06, longevity=1.06, mutation=minor
+[Frame 90] Death: hunted (speed=2.12)
+[Frame 90] Death: hunted (speed=2.12)
+[Frame 90] Death: hunted (speed=1.84)
+[Frame 90] Death: hunted (speed=4.54)
+[Frame 90] Death: hunted (speed=2.44)
+[Frame 90] Birth: speed=4.47, diet=1, size=0.51, fear=0.11, longevity=1.09, mutation=diet_flip
+[Frame 90] Death: hunted (speed=1.67)
+[Frame 90] Death: hunted (speed=3.28) [lost predator fight]
+[Frame 90] Death: hunted (speed=2.75)
+[Frame 90] Birth: speed=7.11, diet=0, size=0.52, fear=0.06, longevity=0.68, mutation=minor
+[Frame 90] Birth: speed=2.17, diet=0, size=0.87, fear=0.07, longevity=1.02, mutation=minor
+[Frame 90] Birth: speed=4.06, diet=0, size=1.04, fear=0.13, longevity=0.65, mutation=minor
+[Frame 90] Death: hunted (speed=1.78)
+[Frame 90] Death: hunted (speed=3.28)
+[Frame 120] Death: hunted (speed=2.25)
+[Frame 120] Death: hunted (speed=7.82)
+[Frame 120] Death: hunted (speed=2.19)
+[Frame 120] Death: hunted (speed=6.64)
+[Frame 120] Death: hunted (speed=1.57)
+[Frame 120] Birth: speed=1.26, diet=0, size=1.03, fear=0.14, longevity=0.94, mutation=minor
+[Frame 120] Death: hunted (speed=1.67)
+[Frame 120] Death: hunted (speed=3.31) [lost predator fight]
+[Frame 120] Death: hunted (speed=2.90)
+[Frame 120] Death: hunted (speed=1.98)
+[Frame 120] Birth: speed=3.19, diet=0, size=0.51, fear=0.06, longevity=1.23, mutation=minor
+[Frame 120] Death: hunted (speed=3.70)
+[Frame 120] Birth: speed=1.67, diet=0, size=0.79, fear=0.20, longevity=0.95, mutation=minor
+[Frame 120] Birth: speed=2.39, diet=0, size=0.59, fear=0.11, longevity=1.18, mutation=minor
+[Frame 120] Birth: speed=3.20, diet=0, size=0.95, fear=0.19, longevity=1.13, mutation=minor
+[Frame 120] Death: hunted (speed=2.48)
+[Frame 120] Birth: speed=4.97, diet=0, size=1.29, fear=0.11, longevity=0.90, mutation=minor
+[Frame 120] Death: hunted (speed=2.94) [lost predator fight]
+[Frame 120] Death: hunted (speed=1.95)
+[Frame 120] Birth: speed=7.74, diet=0, size=0.80, fear=0.08, longevity=1.17, mutation=minor
+[Frame 120] Birth: speed=1.58, diet=0, size=0.88, fear=0.09, longevity=0.96, mutation=minor
+[Frame 120] Birth: speed=3.79, diet=0, size=0.73, fear=0.11, longevity=1.05, mutation=minor
+[Frame 120] Birth: speed=4.31, diet=0, size=1.36, fear=0.10, longevity=0.96, mutation=minor
+[Frame 120] Birth: speed=2.24, diet=1, size=0.73, fear=0.16, longevity=0.99, mutation=minor
+[Frame 120] Birth: speed=5.62, diet=0, size=0.50, fear=0.05, longevity=1.14, mutation=minor
+[Frame 120] Birth: speed=1.27, diet=0, size=0.50, fear=0.08, longevity=0.91, mutation=minor
+[Frame 120] Death: hunted (speed=3.31)
+[Frame 120] Death: hunted (speed=2.94)
+[Frame 120] Birth: speed=5.63, diet=0, size=0.53, fear=0.06, longevity=0.66, mutation=speed_shift
+[Frame 120] Birth: speed=4.81, diet=0, size=1.04, fear=0.13, longevity=0.65, mutation=minor
+[Frame 120] Birth: speed=5.92, diet=0, size=0.59, fear=0.19, longevity=1.21, mutation=minor
+[Frame 150] Death: hunted (speed=3.15)
+[Frame 150] Death: hunted (speed=0.82)
+[Frame 150] Death: hunted (speed=5.65)
+[Frame 150] Death: hunted (speed=6.86)
+[Frame 150] Birth: speed=4.79, diet=0, size=1.00, fear=0.00, longevity=0.97, mutation=minor
+[Frame 150] Birth: speed=3.22, diet=0, size=0.73, fear=0.11, longevity=1.05, mutation=minor
+[Frame 150] Death: hunted (speed=1.89)
+[Frame 150] Birth: speed=1.39, diet=0, size=1.19, fear=0.00, longevity=0.96, mutation=minor
+[Frame 150] Birth: speed=7.00, diet=0, size=0.50, fear=0.09, longevity=1.15, mutation=minor
+[Frame 150] Death: hunted (speed=1.44)
+[Frame 150] Death: hunted (speed=1.94)
+[Frame 150] Death: hunted (speed=2.81)
+[Frame 150] Birth: speed=8.00, diet=1, size=1.16, fear=0.05, longevity=0.84, mutation=minor
+[Frame 150] Death: hunted (speed=1.45)
+[Frame 150] Birth: speed=1.97, diet=0, size=0.50, fear=0.34, longevity=0.79, mutation=minor
+[Frame 150] Death: hunted (speed=2.53)
+[Frame 150] Birth: speed=0.83, diet=0, size=1.02, fear=0.05, longevity=1.21, mutation=minor
+[Frame 180] Death: hunted (speed=3.50)
+[Frame 180] Death: hunted (speed=5.50)
+[Frame 180] Death: hunted (speed=2.30)
+[Frame 180] Death: hunted (speed=1.85) [lost predator fight]
+[Frame 180] Birth: speed=6.74, diet=1, size=0.81, fear=0.07, longevity=1.04, mutation=minor
+[Frame 180] Birth: speed=4.84, diet=1, size=0.98, fear=0.08, longevity=1.07, mutation=minor
+[Frame 180] Death: hunted (speed=2.58)
+[Frame 180] Death: hunted (speed=2.38)
+[Frame 180] Birth: speed=1.17, diet=0, size=0.71, fear=0.09, longevity=1.09, mutation=minor
+[Frame 180] Death: hunted (speed=4.25)
+[Frame 180] Birth: speed=4.84, diet=0, size=0.50, fear=0.04, longevity=1.23, mutation=minor
+[Frame 180] Death: hunted (speed=3.42)
+[Frame 180] Death: hunted (speed=1.85)
+[Frame 180] Death: hunted (speed=2.41)
+[Frame 210] Death: hunted (speed=3.81)
+[Frame 210] Death: hunted (speed=1.01)
+[Frame 210] Death: hunted (speed=4.97)
+[Frame 210] Death: hunted (speed=4.07)
+[Frame 210] Birth: speed=7.21, diet=1, size=1.20, fear=0.07, longevity=0.84, mutation=minor
+[Frame 210] Birth: speed=3.37, diet=0, size=0.86, fear=0.31, longevity=0.99, mutation=minor
+[Frame 210] Death: hunted (speed=4.10)
+[Frame 210] Birth: speed=2.78, diet=1, size=1.06, fear=0.15, longevity=0.85, mutation=minor
+[Frame 210] Death: hunted (speed=1.61)
+[Frame 210] Death: hunted (speed=2.25)
+[Frame 210] Death: hunted (speed=1.98)
+[Frame 210] Birth: speed=7.55, diet=0, size=0.61, fear=0.08, longevity=0.83, mutation=minor
+[Frame 210] Birth: speed=3.24, diet=0, size=1.18, fear=0.04, longevity=1.00, mutation=minor
+[Frame 210] Birth: speed=3.68, diet=0, size=0.67, fear=0.24, longevity=0.95, mutation=minor
+[Frame 210] Birth: speed=1.44, diet=0, size=0.56, fear=0.14, longevity=0.70, mutation=minor
+[Frame 210] Birth: speed=2.19, diet=0, size=0.81, fear=0.14, longevity=1.07, mutation=minor
+[Frame 210] Birth: speed=3.47, diet=0, size=0.86, fear=0.23, longevity=1.02, mutation=minor
+[Frame 210] Birth: speed=3.60, diet=0, size=0.50, fear=0.24, longevity=1.56, mutation=minor
+[Frame 210] Birth: speed=7.48, diet=0, size=0.85, fear=0.20, longevity=0.58, mutation=minor
+[Frame 240] Death: hunted (speed=0.95)
+[Frame 240] Death: hunted (speed=2.12)
+[Frame 240] Death: hunted (speed=5.72)
+[Frame 240] Death: hunted (speed=1.01) [lost predator fight]
+[Frame 240] Death: hunted (speed=1.60) [lost predator fight]
+[Frame 240] Birth: speed=8.00, diet=0, size=0.85, fear=0.20, longevity=0.58, mutation=minor
+[Frame 240] Birth: speed=8.00, diet=0, size=2.09, fear=0.16, longevity=1.13, mutation=minor
+[Frame 240] Birth: speed=2.02, diet=1, size=1.08, fear=0.08, longevity=1.26, mutation=minor
+[Frame 240] Birth: speed=1.56, diet=0, size=1.46, fear=0.03, longevity=0.95, mutation=minor
+[Frame 240] Birth: speed=3.22, diet=0, size=0.70, fear=0.24, longevity=1.04, mutation=minor
+[Frame 240] Death: hunted (speed=1.26) [lost predator fight]
+[Frame 240] Death: hunted (speed=2.54) [lost predator fight]
+[Frame 240] Death: hunted (speed=1.01)
+[Frame 240] Birth: speed=3.95, diet=0, size=0.91, fear=0.06, longevity=0.89, mutation=minor
+[Frame 240] Death: hunted (speed=1.60)
+[Frame 240] Death: hunted (speed=1.26)
+[Frame 240] Death: hunted (speed=2.54)
+[Frame 270] Death: hunted (speed=0.68)
+[Frame 270] Death: hunted (speed=5.15)
+[Frame 270] Birth: speed=8.00, diet=0, size=0.98, fear=0.13, longevity=0.92, mutation=minor
+[Frame 270] Death: hunted (speed=4.13)
+[Frame 270] Death: hunted (speed=1.30)
+[Frame 270] Birth: speed=7.25, diet=0, size=2.10, fear=0.11, longevity=1.13, mutation=minor
+[Frame 270] Birth: speed=4.24, diet=0, size=0.91, fear=0.06, longevity=0.58, mutation=minor
+[Frame 270] Death: hunted (speed=1.77)
+[Frame 270] Birth: speed=8.00, diet=0, size=0.50, fear=0.33, longevity=0.66, mutation=minor
+[Frame 270] Birth: speed=3.71, diet=0, size=0.54, fear=0.09, longevity=0.79, mutation=minor
+[Frame 270] Death: hunted (speed=2.09)
+[Frame 270] Birth: speed=4.15, diet=0, size=0.70, fear=0.32, longevity=0.61, mutation=minor
+[Frame 300] Death: hunted (speed=3.33)
+[Frame 300] Death: hunted (speed=5.03)
+[Frame 300] Death: hunted (speed=2.75)
+[Frame 300] Death: hunted (speed=5.52)
+[Frame 300] Death: hunted (speed=3.31)
+[Frame 300] Death: hunted (speed=2.13)
+[Frame 300] Death: hunted (speed=2.62)
+[Frame 300] Death: hunted (speed=3.02)
+[Frame 300] Death: hunted (speed=1.46)
+[Frame 300] Death: hunted (speed=4.89)
+[Frame 300] Death: hunted (speed=4.64)
+[Frame 300] Birth: speed=2.50, diet=1, size=0.98, fear=0.02, longevity=1.14, mutation=minor
+[Frame 300] Birth: speed=6.49, diet=0, size=0.77, fear=0.07, longevity=2.00, mutation=minor
+[Frame 300] Birth: speed=8.00, diet=0, size=0.75, fear=0.06, longevity=0.69, mutation=minor
+[Frame 330] Death: hunted (speed=8.00)
+[Frame 330] Death: hunted (speed=2.46)
+[Frame 330] Death: hunted (speed=1.45) [lost predator fight]
+[Frame 330] Death: hunted (speed=2.10) [lost predator fight]
+[Frame 330] Death: hunted (speed=2.39) [lost predator fight]
+[Frame 330] Death: hunted (speed=4.46)
+[Frame 330] Birth: speed=1.31, diet=0, size=0.90, fear=0.19, longevity=0.85, mutation=minor
+[Frame 330] Birth: speed=7.22, diet=0, size=0.76, fear=0.03, longevity=0.80, mutation=minor
+[Frame 330] Death: hunted (speed=8.00)
+[Frame 330] Death: hunted (speed=4.31)
+[Frame 330] Death: hunted (speed=1.56)
+[Frame 330] Death: hunted (speed=7.14)
+[Frame 330] Death: hunted (speed=1.45)
+[Frame 330] Death: hunted (speed=2.10)
+[Frame 330] Death: hunted (speed=2.39)
+[Frame 360] Death: hunted (speed=2.17)
+[Frame 360] Birth: speed=1.64, diet=1, size=1.28, fear=0.02, longevity=1.15, mutation=minor
+[Frame 360] Birth: speed=2.40, diet=1, size=0.79, fear=0.13, longevity=1.26, mutation=minor
+[Frame 360] Birth: speed=2.81, diet=1, size=0.75, fear=0.17, longevity=0.62, mutation=minor
+[Frame 360] Birth: speed=5.88, diet=0, size=0.73, fear=0.03, longevity=0.65, mutation=minor
+[Frame 360] Death: hunted (speed=2.55)
+[Frame 360] Birth: speed=6.99, diet=0, size=0.69, fear=0.29, longevity=0.66, mutation=minor
+[Frame 360] Death: hunted (speed=2.61)
+[Frame 360] Birth: speed=1.17, diet=0, size=0.50, fear=0.23, longevity=1.93, mutation=minor
+[Frame 390] Death: hunted (speed=2.11)
+[Frame 390] Death: hunted (speed=7.08)
+[Frame 390] Death: hunted (speed=4.01)
+[Frame 390] Death: hunted (speed=7.41)
+[Frame 390] Death: hunted (speed=4.39)
+[Frame 390] Death: hunted (speed=4.79)
+[Frame 390] Birth: speed=3.65, diet=1, size=1.23, fear=0.19, longevity=0.67, mutation=minor
+[Frame 390] Death: hunted (speed=2.82) [lost predator fight]
+[Frame 390] Death: hunted (speed=2.90)
+[Frame 390] Death: hunted (speed=3.42)
+[Frame 390] Birth: speed=5.20, diet=1, size=0.67, fear=0.16, longevity=1.24, mutation=minor
+[Frame 390] Birth: speed=6.84, diet=0, size=0.61, fear=0.36, longevity=0.57, mutation=minor
+[Frame 390] Death: hunted (speed=2.82)
+[Frame 420] Death: hunted (speed=8.00) [lost predator fight]
+[Frame 420] Death: hunted (speed=8.00)
+[Frame 420] Death: hunted (speed=2.24)
+[Frame 420] Birth: speed=4.37, diet=1, size=0.67, fear=0.18, longevity=1.24, mutation=minor
+[Frame 420] Death: hunted (speed=3.23) [lost predator fight]
+[Frame 420] Death: hunted (speed=1.51)
+[Frame 420] Birth: speed=2.91, diet=1, size=1.18, fear=0.20, longevity=0.68, mutation=minor
+[Frame 420] Death: hunted (speed=2.67)
+[Frame 420] Death: hunted (speed=1.52) [lost predator fight]
+[Frame 420] Death: hunted (speed=2.10)
+[Frame 420] Death: hunted (speed=8.00)
+[Frame 420] Death: hunted (speed=3.23)
+[Frame 420] Death: hunted (speed=1.52)
+[Frame 420] Birth: speed=1.19, diet=0, size=0.50, fear=0.20, longevity=1.93, mutation=minor
+[Frame 450] Death: hunted (speed=2.32)
+[Frame 450] Death: hunted (speed=1.17)
+[Frame 450] Death: hunted (speed=3.82) [lost predator fight]
+[Frame 450] Birth: speed=2.90, diet=0, size=0.63, fear=0.24, longevity=0.79, mutation=minor
+[Frame 450] Death: hunted (speed=1.85) [lost predator fight]
+[Frame 450] Birth: speed=1.08, diet=0, size=0.50, fear=0.19, longevity=2.00, mutation=minor
+[Frame 450] Death: hunted (speed=3.82)
+[Frame 450] Death: hunted (speed=1.85)
+[Frame 480] Death: hunted (speed=3.13)
+[Frame 480] Death: hunted (speed=1.53)
+[Frame 480] Death: hunted (speed=6.87)
+[Frame 480] Death: hunted (speed=1.58) [lost predator fight]
+[Frame 480] Birth: speed=4.18, diet=1, size=0.67, fear=0.15, longevity=1.24, mutation=minor
+[Frame 480] Death: hunted (speed=5.73) [lost predator fight]
+[Frame 480] Death: hunted (speed=3.25) [lost predator fight]
+[Frame 480] Death: hunted (speed=2.30)
+[Frame 480] Death: hunted (speed=2.69)
+[Frame 480] Death: hunted (speed=1.58)
+[Frame 480] Death: hunted (speed=5.73)
+[Frame 480] Death: hunted (speed=3.25)
+[Frame 510] Death: hunted (speed=1.46) [lost predator fight]
+[Frame 510] Birth: speed=4.23, diet=1, size=0.67, fear=0.16, longevity=0.98, mutation=minor
+[Frame 510] Death: hunted (speed=5.74) [lost predator fight]
+[Frame 510] Death: hunted (speed=3.68) [lost predator fight]
+[Frame 510] Birth: speed=3.57, diet=0, size=0.59, fear=0.21, longevity=1.60, mutation=minor
+[Frame 510] Birth: speed=5.53, diet=1, size=1.60, fear=0.09, longevity=1.02, mutation=minor
+[Frame 510] Birth: speed=2.12, diet=1, size=0.90, fear=0.16, longevity=0.50, mutation=minor
+[Frame 510] Death: hunted (speed=2.04)
+[Frame 510] Death: hunted (speed=1.46)
+[Frame 510] Death: hunted (speed=5.74)
+[Frame 510] Death: hunted (speed=3.68)
+[Frame 540] Death: starved (speed=2.78)
+[Frame 540] Death: starved (speed=2.54)
+[Frame 540] Death: starved (speed=3.00)
+[Frame 540] Death: hunted (speed=4.15) [lost predator fight]
+[Frame 540] Birth: speed=4.48, diet=1, size=1.63, fear=0.09, longevity=0.86, mutation=minor
+[Frame 540] Death: hunted (speed=4.47)
+[Frame 540] Birth: speed=7.18, diet=0, size=1.03, fear=0.08, longevity=1.05, mutation=minor
+[Frame 540] Birth: speed=7.55, diet=1, size=0.68, fear=0.00, longevity=0.82, mutation=minor
+[Frame 540] Death: hunted (speed=3.87)
+[Frame 540] Birth: speed=2.54, diet=1, size=0.84, fear=0.10, longevity=0.83, mutation=minor
+[Frame 540] Birth: speed=2.20, diet=1, size=0.81, fear=0.16, longevity=0.95, mutation=minor
+[Frame 540] Birth: speed=8.00, diet=1, size=1.25, fear=0.21, longevity=0.50, mutation=minor
+[Frame 540] Death: hunted (speed=4.15)
+[Frame 540] Death: hunted (speed=4.47) [lost predator fight]
+[Frame 540] Birth: speed=4.03, diet=0, size=0.59, fear=0.24, longevity=1.32, mutation=minor
+[Frame 570] Death: starved (speed=1.60)
+[Frame 570] Death: starved (speed=1.11)
+[Frame 570] Birth: speed=2.20, diet=1, size=1.02, fear=0.16, longevity=0.50, mutation=minor
+[Frame 570] Death: hunted (speed=4.34) [lost predator fight]
+[Frame 570] Death: hunted (speed=2.55)
+[Frame 570] Birth: speed=4.08, diet=1, size=0.81, fear=0.21, longevity=0.95, mutation=minor
+[Frame 570] Death: hunted (speed=4.19)
+[Frame 570] Death: hunted (speed=4.34)
+[Frame 600] Death: hunted (speed=5.19)
+[Frame 600] Death: hunted (speed=3.29)
+[Frame 600] Death: hunted (speed=7.15)
+[Frame 600] Death: hunted (speed=7.38) [lost predator fight]
+[Frame 600] Death: hunted (speed=1.11)
+[Frame 600] Death: hunted (speed=1.92) [lost predator fight]
+[Frame 600] Death: hunted (speed=7.44)
+[Frame 600] Birth: speed=3.96, diet=1, size=1.62, fear=0.16, longevity=1.13, mutation=speed_shift
+[Frame 600] Death: hunted (speed=3.29) [lost predator fight]
+[Frame 600] Death: hunted (speed=7.15) [lost predator fight]
+[Frame 600] Death: hunted (speed=7.38)
+[Frame 600] Death: hunted (speed=1.92)
+[Frame 630] Death: hunted (speed=3.87) [lost predator fight]
+[Frame 630] Death: hunted (speed=3.01) [lost predator fight]
+[Frame 630] Birth: speed=5.09, diet=1, size=1.22, fear=0.11, longevity=0.72, mutation=minor
+[Frame 630] Death: hunted (speed=2.22)
+[Frame 630] Death: hunted (speed=0.50) [lost predator fight]
+[Frame 630] Death: hunted (speed=4.25)
+[Frame 630] Birth: speed=7.55, diet=1, size=0.79, fear=0.17, longevity=0.96, mutation=minor
+[Frame 630] Death: hunted (speed=3.87)
+[Frame 630] Death: hunted (speed=3.01)
+[Frame 630] Death: hunted (speed=0.50)
+[Frame 630] Death: hunted (speed=4.25) [lost predator fight]
+[Frame 660] Death: starved (speed=3.70)
+[Frame 660] Death: hunted (speed=0.53)
+[Frame 660] Death: hunted (speed=2.58)
+[Frame 660] Death: hunted (speed=4.47) [lost predator fight]
+[Frame 660] Birth: speed=8.00, diet=0, size=0.60, fear=0.14, longevity=0.61, mutation=minor
+[Frame 660] Death: hunted (speed=7.98)
+[Frame 660] Birth: speed=2.71, diet=1, size=0.93, fear=0.18, longevity=0.55, mutation=minor
+[Frame 660] Birth: speed=5.61, diet=0, size=1.08, fear=0.37, longevity=0.73, mutation=minor
+[Frame 660] Death: hunted (speed=0.53) [lost predator fight]
+[Frame 660] Death: hunted (speed=4.47)
+[Frame 690] Death: aged (speed=4.33)
+[Frame 690] Death: hunted (speed=0.54)
+[Frame 690] Death: hunted (speed=2.84)
+[Frame 690] Birth: speed=3.94, diet=1, size=2.11, fear=0.23, longevity=1.13, mutation=minor
+[Frame 690] Death: hunted (speed=3.17)
+[Frame 690] Death: hunted (speed=1.71) [lost predator fight]
+[Frame 690] Death: hunted (speed=0.54) [lost predator fight]
+[Frame 690] Death: hunted (speed=1.71)
+[Frame 720] Death: starved (speed=3.72)
+[Frame 720] Death: hunted (speed=7.23)
+[Frame 720] Death: hunted (speed=3.44)
+[Frame 720] Death: hunted (speed=1.94) [lost predator fight]
+[Frame 720] Death: hunted (speed=2.33) [lost predator fight]
+[Frame 720] Death: hunted (speed=3.44) [lost predator fight]
+[Frame 720] Death: hunted (speed=1.94)
+[Frame 720] Death: hunted (speed=2.33)
+[Frame 750] Death: hunted (speed=2.59)
+[Frame 750] Death: starved (speed=2.81)
+[Frame 750] Birth: speed=5.02, diet=1, size=2.46, fear=0.07, longevity=0.88, mutation=minor
+[Frame 750] Birth: speed=4.75, diet=1, size=1.88, fear=0.23, longevity=1.13, mutation=minor
+[Frame 750] Death: hunted (speed=0.51) [lost predator fight]
+[Frame 750] Death: hunted (speed=4.47)
+[Frame 750] Birth: speed=4.36, diet=0, size=0.53, fear=0.20, longevity=0.61, mutation=minor
+[Frame 750] Death: hunted (speed=0.51)
+[Frame 750] Death: hunted (speed=4.47) [lost predator fight]
+[Frame 780] Death: hunted (speed=5.22)
+[Frame 780] Death: hunted (speed=3.18)
+[Frame 780] Death: hunted (speed=0.50)
+[Frame 780] Birth: speed=3.36, diet=1, size=2.21, fear=0.12, longevity=0.71, mutation=minor
+[Frame 780] Death: hunted (speed=5.22) [lost predator fight]
+[Frame 780] Death: hunted (speed=3.18) [lost predator fight]
+[Frame 780] Death: hunted (speed=0.50) [lost predator fight]
+[Frame 810] Death: starved (speed=3.06)
+[Frame 810] Death: hunted (speed=8.00)
+[Frame 810] Death: hunted (speed=7.78)
+[Frame 810] Death: hunted (speed=7.98)
+[Frame 810] Death: hunted (speed=7.85) [lost predator fight]
+[Frame 810] Birth: speed=2.20, diet=1, size=1.19, fear=0.19, longevity=0.87, mutation=minor
+[Frame 810] Death: hunted (speed=8.00) [lost predator fight]
+[Frame 810] Death: hunted (speed=7.85)
+[Frame 840] Birth: speed=1.86, diet=1, size=1.31, fear=0.28, longevity=0.84, mutation=minor
+[Frame 870] Death: hunted (speed=4.94)
+[Frame 870] Birth: speed=8.00, diet=0, size=1.21, fear=0.22, longevity=0.77, mutation=minor
+[Frame 870] Birth: speed=2.72, diet=0, size=0.60, fear=0.09, longevity=0.85, mutation=minor
+[Frame 870] Death: hunted (speed=4.94) [lost predator fight]
+[Frame 900] Death: aged (speed=3.04)
+[Frame 900] Death: hunted (speed=3.13)
+[Frame 900] Death: hunted (speed=0.55)
+[Frame 900] Birth: speed=2.37, diet=0, size=0.55, fear=0.14, longevity=0.83, mutation=minor
+[Frame 900] Death: hunted (speed=3.13) [lost predator fight]
+[Frame 900] Death: hunted (speed=0.55) [lost predator fight]
+[Frame 930] Death: hunted (speed=2.37)
+[Frame 930] Birth: speed=4.11, diet=1, size=2.50, fear=0.26, longevity=1.19, mutation=minor
+[Frame 930] Death: hunted (speed=7.41) [lost predator fight]
+[Frame 930] Death: hunted (speed=7.41)
+[Frame 960] Birth: speed=3.27, diet=1, size=2.50, fear=0.12, longevity=0.71, mutation=minor
+[Frame 960] Death: hunted (speed=3.39)
+[Frame 960] Death: hunted (speed=3.39) [lost predator fight]
+[Frame 990] Death: hunted (speed=7.87)
+[Frame 990] Birth: speed=0.50, diet=1, size=2.50, fear=0.35, longevity=0.61, mutation=minor
+[Frame 990] Birth: speed=3.49, diet=1, size=2.50, fear=0.25, longevity=1.19, mutation=minor
+[Frame 990] Birth: speed=6.97, diet=0, size=0.66, fear=0.17, longevity=0.52, mutation=minor
+[Frame 1020] Death: hunted (speed=4.60)
+[Frame 1020] Birth: speed=3.46, diet=1, size=2.50, fear=0.12, longevity=0.71, mutation=minor
+[Frame 1020] Birth: speed=2.17, diet=1, size=1.83, fear=0.29, longevity=0.73, mutation=minor
+[Frame 1020] Death: hunted (speed=4.60) [lost predator fight]
+[Frame 1050] Birth: speed=0.56, diet=1, size=2.50, fear=0.35, longevity=0.61, mutation=minor
+[Frame 1050] Birth: speed=3.38, diet=1, size=2.28, fear=0.22, longevity=1.19, mutation=minor
+[Frame 1050] Birth: speed=3.26, diet=1, size=2.50, fear=0.08, longevity=0.71, mutation=minor
+[Frame 1050] Birth: speed=8.00, diet=0, size=2.37, fear=0.30, longevity=0.72, mutation=minor
+[Frame 1080] Birth: speed=4.98, diet=1, size=2.19, fear=0.09, longevity=0.88, mutation=minor
+[Frame 1080] Death: hunted (speed=3.86)
+[Frame 1080] Death: hunted (speed=3.86) [lost predator fight]
+[Frame 1110] Death: starved (speed=2.44)
+[Frame 1110] Birth: speed=0.56, diet=1, size=2.50, fear=0.32, longevity=0.55, mutation=minor
+[Frame 1110] Death: hunted (speed=7.79)
+[Frame 1110] Birth: speed=3.05, diet=1, size=2.50, fear=0.14, longevity=0.71, mutation=minor
+[Frame 1110] Birth: speed=7.64, diet=0, size=2.10, fear=0.31, longevity=0.79, mutation=minor
+[Frame 1140] Death: hunted (speed=8.00)
+[Frame 1170] Birth: speed=3.29, diet=1, size=2.50, fear=0.12, longevity=0.71, mutation=minor
+[Frame 1200] Birth: speed=3.53, diet=1, size=2.50, fear=0.12, longevity=0.71, mutation=minor
+[Frame 1200] Birth: speed=7.55, diet=0, size=2.25, fear=0.36, longevity=0.64, mutation=minor
+[Frame 1230] Birth: speed=7.95, diet=0, size=2.29, fear=0.41, longevity=0.58, mutation=minor
+[Frame 1290] Birth: speed=2.88, diet=0, size=2.31, fear=0.31, longevity=0.54, mutation=minor
+[Frame 1320] Death: hunted (speed=3.52)
+[Frame 1320] Death: hunted (speed=3.52) [lost predator fight]
+[Frame 1350] Birth: speed=3.19, diet=1, size=2.32, fear=0.12, longevity=0.71, mutation=minor
+[Frame 1380] Birth: speed=3.89, diet=1, size=2.50, fear=0.25, longevity=1.19, mutation=minor
+[Frame 1380] Birth: speed=8.00, diet=0, size=2.42, fear=0.27, longevity=0.59, mutation=minor
+[Frame 1410] Death: hunted (speed=3.39)
+[Frame 1410] Death: hunted (speed=3.39) [lost predator fight]
+[Frame 1560] Death: starved (speed=8.00)
+[Frame 1590] Death: aged (speed=7.51)
+[Frame 1620] Death: hunted (speed=3.69)
+[Frame 1620] Death: hunted (speed=3.69) [lost predator fight]
+[Frame 1680] Death: aged (speed=7.66)
+[Frame 1710] Death: hunted (speed=3.92)
+[Frame 1710] Death: hunted (speed=3.92) [lost predator fight]
+[Frame 1740] Death: hunted (speed=4.22)
+[Frame 1740] Birth: speed=6.09, diet=0, size=2.50, fear=0.36, longevity=0.80, mutation=minor
+[Frame 1740] Death: hunted (speed=4.22) [lost predator fight]
+[Frame 1770] Birth: speed=6.06, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 1770] Birth: speed=7.23, diet=0, size=2.50, fear=0.37, longevity=0.82, mutation=minor
+[Frame 1800] Death: hunted (speed=5.92)
+[Frame 1800] Death: hunted (speed=5.92) [lost predator fight]
+[Frame 1830] Birth: speed=5.36, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 1860] Death: hunted (speed=6.05)
+[Frame 1860] Death: hunted (speed=6.05) [lost predator fight]
+[Frame 1860] Birth: speed=7.93, diet=0, size=1.64, fear=0.25, longevity=0.96, mutation=minor
+[Frame 1890] Birth: speed=4.15, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=speed_shift
+[Frame 1920] Birth: speed=6.79, diet=0, size=2.09, fear=0.25, longevity=0.93, mutation=minor
+[Frame 1950] Birth: speed=4.97, diet=1, size=2.09, fear=0.23, longevity=1.33, mutation=minor
+[Frame 1980] Death: hunted (speed=8.00)
+[Frame 1980] Birth: speed=5.50, diet=1, size=2.38, fear=0.23, longevity=1.33, mutation=minor
+[Frame 1980] Death: hunted (speed=8.00) [lost predator fight]
+[Frame 2100] Birth: speed=6.46, diet=1, size=2.25, fear=0.15, longevity=1.13, mutation=minor
+[Frame 2130] Birth: speed=6.27, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 2190] Birth: speed=5.54, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 2220] Birth: speed=5.65, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 2310] Death: hunted (speed=5.53)
+[Frame 2310] Death: hunted (speed=5.53) [lost predator fight]
+[Frame 2370] Birth: speed=5.59, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 2370] Death: starved (speed=7.17)
+[Frame 2400] Birth: speed=8.00, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=speed_shift
+[Frame 2430] Birth: speed=5.55, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=minor
+[Frame 2460] Birth: speed=5.78, diet=1, size=2.50, fear=0.16, longevity=1.19, mutation=minor
+[Frame 2490] Birth: speed=8.00, diet=1, size=2.45, fear=0.15, longevity=1.19, mutation=speed_shift
+[Frame 2520] Birth: speed=8.00, diet=1, size=2.50, fear=0.15, longevity=1.19, mutation=speed_shift
+[Frame 2550] Birth: speed=6.27, diet=1, size=2.50, fear=0.14, longevity=0.95, mutation=minor
+[Frame 2580] Birth: speed=5.03, diet=1, size=2.50, fear=0.14, longevity=0.88, mutation=minor
+[Frame 2610] Birth: speed=8.00, diet=1, size=2.12, fear=0.15, longevity=1.07, mutation=size_shift
+[Frame 2640] Birth: speed=7.89, diet=1, size=2.50, fear=0.20, longevity=1.07, mutation=minor
+[Frame 2670] Birth: speed=7.14, diet=1, size=2.50, fear=0.22, longevity=0.87, mutation=minor
+[Frame 2700] Birth: speed=6.49, diet=1, size=2.50, fear=0.22, longevity=0.87, mutation=minor
+[Frame 2730] Birth: speed=8.00, diet=1, size=2.50, fear=0.22, longevity=0.99, mutation=minor
+[Frame 2760] Death: hunted (speed=6.41)
+[Frame 2760] Birth: speed=5.82, diet=0, size=1.76, fear=0.19, longevity=1.42, mutation=minor
+[Frame 2790] Death: hunted (speed=6.73)
+[Frame 2790] Birth: speed=6.13, diet=0, size=1.90, fear=0.22, longevity=1.41, mutation=minor
+[Frame 2820] Death: hunted (speed=8.00)
+[Frame 2820] Birth: speed=8.00, diet=0, size=1.98, fear=0.28, longevity=1.87, mutation=minor
+[Frame 2850] Death: hunted (speed=7.56)
+[Frame 2850] Birth: speed=6.92, diet=0, size=2.18, fear=0.11, longevity=1.59, mutation=minor
+[Frame 2880] Death: hunted (speed=7.59)
+[Frame 2880] Birth: speed=7.05, diet=0, size=2.04, fear=0.09, longevity=1.02, mutation=minor
+[Frame 2910] Death: hunted (speed=7.80)
+[Frame 2910] Birth: speed=8.00, diet=0, size=1.41, fear=0.09, longevity=0.76, mutation=minor
+[Frame 2940] Death: hunted (speed=4.14)
+[Frame 2940] Birth: speed=4.16, diet=0, size=2.07, fear=0.04, longevity=0.78, mutation=minor
+[Frame 2970] Death: hunted (speed=3.72)
+[Frame 2970] Birth: speed=3.95, diet=0, size=1.81, fear=0.00, longevity=0.55, mutation=minor
+[Frame 3000] Death: hunted (speed=3.27)
+[Frame 3000] Birth: speed=3.42, diet=0, size=2.20, fear=0.04, longevity=0.50, mutation=minor
+[Frame 3030] Death: hunted (speed=7.30)
+[Frame 3030] Death: hunted (speed=7.30) [lost predator fight]
+[Frame 3060] Death: hunted (speed=8.00)
+[Frame 3060] Death: hunted (speed=8.00) [lost predator fight]
+[Frame 3090] Death: hunted (speed=7.61)
+[Frame 3090] Death: hunted (speed=7.61) [lost predator fight]
+[Frame 3120] Death: hunted (speed=8.00)
+[Frame 3120] Death: hunted (speed=8.00) [lost predator fight]
+[Frame 3150] Death: hunted (speed=8.00)
+[Frame 3150] Death: hunted (speed=8.00) [lost predator fight]
+[Frame 3180] Birth: speed=8.00, diet=1, size=2.50, fear=0.18, longevity=1.05, mutation=minor
+[Frame 3210] Birth: speed=6.26, diet=1, size=2.50, fear=0.22, longevity=1.05, mutation=speed_shift
+[Frame 3240] Birth: speed=7.61, diet=1, size=2.50, fear=0.22, longevity=1.03, mutation=minor
+[Frame 3270] Birth: speed=8.00, diet=1, size=2.50, fear=0.22, longevity=0.94, mutation=minor
+[Frame 3300] Birth: speed=8.00, diet=1, size=2.50, fear=0.22, longevity=1.05, mutation=minor
+[Frame 3330] Birth: speed=8.00, diet=1, size=2.40, fear=0.22, longevity=1.05, mutation=minor
+[Frame 3360] Death: hunted (speed=6.41)
+[Frame 3360] Birth: speed=6.40, diet=0, size=2.50, fear=0.18, longevity=1.01, mutation=minor
+[Frame 3390] Death: hunted (speed=7.04)
+[Frame 3390] Birth: speed=6.74, diet=0, size=1.82, fear=0.06, longevity=1.50, mutation=minor
+[Frame 3420] Death: hunted (speed=6.91)
+[Frame 3420] Birth: speed=7.08, diet=0, size=2.03, fear=0.04, longevity=1.27, mutation=minor
+[Frame 3450] Death: hunted (speed=6.57)
+[Frame 3450] Death: hunted (speed=6.57) [lost predator fight]
+[Frame 3480] Death: hunted (speed=7.12)
+[Frame 3480] Death: hunted (speed=7.12) [lost predator fight]
+[Frame 3510] Death: hunted (speed=6.14)
+[Frame 3510] Birth: speed=5.59, diet=0, size=2.50, fear=0.21, longevity=1.45, mutation=minor
+[Frame 3540] Death: hunted (speed=8.00)
+[Frame 3540] Birth: speed=8.00, diet=0, size=2.50, fear=0.20, longevity=1.35, mutation=minor
+[Frame 3570] Death: hunted (speed=6.00)
+[Frame 3570] Birth: speed=6.47, diet=0, size=1.44, fear=0.04, longevity=1.36, mutation=minor
+[Frame 3600] Death: hunted (speed=6.03)
+[Frame 3600] Birth: speed=5.98, diet=0, size=1.53, fear=0.07, longevity=1.12, mutation=minor
+[Frame 3630] Death: hunted (speed=4.22)
+[Frame 3630] Birth: speed=4.28, diet=0, size=1.99, fear=0.10, longevity=0.82, mutation=minor
+[Frame 3660] Birth: speed=7.80, diet=1, size=2.16, fear=0.23, longevity=1.08, mutation=size_shift
