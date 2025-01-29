@@ -73,7 +73,7 @@ timestamp    = datetime.now().strftime("%Y%m%d_%H%M%S")
 LOG_FILE     = f"sim_log_{timestamp}.txt"
 
 pygame.init()
-screen = pygame.display.set_mode((1200, 800))
+screen = pygame.display.set_mode((2200, 1200))
 font = pygame.font.Font(None, 24)
 clock = pygame.time.Clock()
 
