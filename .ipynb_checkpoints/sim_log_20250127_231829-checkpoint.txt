@@ -1,0 +1,45 @@
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=7.48, diet=1, mutation=minor
+[Frame 90] Death: hunted (speed=2.06)
+[Frame 90] Birth: speed=6.95, diet=1, mutation=minor
+[Frame 90] Birth: speed=6.27, diet=1, mutation=minor
+[Frame 90] Birth: speed=7.70, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=5.65, diet=0, mutation=diet_flip
+[Frame 90] Birth: speed=7.80, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 90] Birth: speed=8.00, diet=1, mutation=minor
+[Frame 510] Death: starved (speed=2.61)
+[Frame 510] Death: starved (speed=2.16)
+[Frame 510] Death: starved (speed=0.87)
+[Frame 510] Death: starved (speed=4.23)
+[Frame 510] Death: starved (speed=2.13)
+[Frame 510] Death: starved (speed=0.89)
+[Frame 510] Death: starved (speed=0.92)
+[Frame 510] Death: starved (speed=2.91)
+[Frame 510] Death: starved (speed=0.83)
+[Frame 510] Death: starved (speed=0.82)
+[Frame 510] Death: starved (speed=1.29)
+[Frame 510] Death: starved (speed=0.51)
+[Frame 510] Death: starved (speed=0.50)
+[Frame 510] Death: starved (speed=2.62)
+[Frame 540] Death: starved (speed=1.64)
+[Frame 540] Death: starved (speed=0.87)
+[Frame 540] Death: starved (speed=0.73)
+[Frame 540] Death: starved (speed=4.04)
+[Frame 540] Death: starved (speed=0.85)
+[Frame 540] Death: starved (speed=2.23)
+[Frame 540] Death: starved (speed=0.82)
+[Frame 540] Death: starved (speed=0.50)
+[Frame 540] Death: starved (speed=1.00)
+[Frame 540] Death: starved (speed=0.50)

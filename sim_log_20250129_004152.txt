@@ -1,0 +1,7 @@
+[Frame 30] Death: hunted (speed=2.42)
+[Frame 90] Death: hunted (speed=1.55)
+[Frame 150] Death: hunted (speed=1.53)
+[Frame 270] Death: hunted (speed=1.48)
+[Frame 420] Death: hunted (speed=1.78)
+[Frame 600] Death: aged (speed=2.81)
+[Frame 750] Death: aged (speed=2.94)
