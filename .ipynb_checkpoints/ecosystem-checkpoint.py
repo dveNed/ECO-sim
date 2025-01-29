@@ -1,12 +1,9 @@
-# ECO-sim v0.5.5
-# 
-# Changelog (relative to v0.5.4):
-# 1) Fixed predator/hunter death counting logic (carried over from v0.5.4).
-# 2) Properly separated predator vs herbivore stats in format_stats().
-# 3) Implemented 'division' reproduction mechanic: parent's size halved, child inherits the old half.
-# 4) Fixed heading in run_away() so fleeing creature faces away from predator.
-# 5) Added optional use of eating/fighting countdown timers to prevent "instant repeat" actions.
-# 6) Minor code cleanups.
+# ECO-sim v0.5.6
+#
+# Changelog (relative to v0.5.5):
+# - Removed cell-division upon reproduction.
+# - Implemented energy-based size scaling.
+# - Kept improved day/night cycle, heading fix, countdown timers, stats display, etc.
 
 import pygame
 import numpy as np
@@ -36,84 +33,83 @@ ENV_REPRO_CHANCE_BASE = 0.3
 ENV_REPRO_FOOD_FACTOR = 0.2
 ENV_REPRO_POP_FACTOR  = 0.2
 
-MUTATION_RATE = 0.1
+MUTATION_RATE        = 0.1
 BASE_DIET_FLIP_CHANCE = 0.005
 
-FEAR_MUTATION_CHANCE = 0.2
-SIZE_MUTATION_CHANCE = 0.2
-LONGEVITY_MUTATION_CHANCE = 0.2
+FEAR_MUTATION_CHANCE       = 0.2
+SIZE_MUTATION_CHANCE       = 0.2
+LONGEVITY_MUTATION_CHANCE  = 0.2
 
 MAX_SPEED = 8.0
 MIN_SPEED = 0.5
 
-MIN_SIZE  = 0.5
-MAX_SIZE  = 2.0
+MIN_SIZE = 0.5
+MAX_SIZE = 2.0
 
 IDLE_COST = 0.01
 
-EATING_TIME_FRAMES = 15   # 0.5 seconds at 30fps
-FIGHTING_TIME_FRAMES = 45 # 1.5 seconds at 30fps
+EATING_TIME_FRAMES   = 15  # 0.5 seconds @30fps
+FIGHTING_TIME_FRAMES = 45  # 1.5 seconds @30fps
 
 FEAR_COST_BASE = 0.02
 FEAR_THRESHOLD_HERB = 0.3
 
-AMBUSH_BONUS = 1.1
-PRED_FEAR_THRESHOLD = 0.5
-SIZE_DOMINANCE_RATIO = 1.2
+AMBUSH_BONUS          = 1.1
+PRED_FEAR_THRESHOLD   = 0.5
+SIZE_DOMINANCE_RATIO  = 1.2
 HERB_SIZE_DOMINANCE_RATIO = 1.2
 
-SIGHT_RANGE = 200.0
+SIGHT_RANGE     = 200.0
 BLOCKING_RADIUS = 5.0
 
-DAY_LENGTH = 600
-DAY_COLOR = (60, 140, 180)    # Darker day
+DAY_LENGTH  = 600
+DAY_COLOR   = (60, 140, 180)  # Darker day
 NIGHT_COLOR = (0, 10, 35)     # Near-black night
 
 DAYTIME_FOOD_SPAWN_CHANCE = 0.02
 
 LOG_INTERVAL = 30
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-LOG_FILE = f"sim_log_{timestamp}.txt"
+timestamp    = datetime.now().strftime("%Y%m%d_%H%M%S")
+LOG_FILE     = f"sim_log_{timestamp}.txt"
 
 pygame.init()
 screen = pygame.display.set_mode((1200, 800))
 font = pygame.font.Font(None, 24)
 clock = pygame.time.Clock()
 
-FOOD_COLOR = (242, 243, 244)
-GRAPH_COLOR = (200, 100, 150)
+FOOD_COLOR           = (242, 243, 244)
+GRAPH_COLOR          = (200, 100, 150)
 PREDATOR_GRAPH_COLOR = (150, 100, 200)
 
-GRID_CELL_SIZE = 25
+GRID_CELL_SIZE   = 25
 COLLISION_PASSES = 2
 
 def format_sim_time(frames):
-    """Convert frame count to hours:minutes:seconds"""
+    """Convert frame count to hours:minutes:seconds."""
     total_seconds = frames // 30
-    hours = total_seconds // 3600
+    hours   = total_seconds // 3600
     minutes = (total_seconds % 3600) // 60
     seconds = total_seconds % 60
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
-# CHANGE: a revised format_stats with separate herb/pred calculations.
 def format_stats(creatures, foods, day_count, sim_frames, death_log, avg_frame_time, mutation_tracker):
-    # Population Stats
+    """Shows separate herb vs. predator stats."""
     live_creatures = [c for c in creatures if c and not c.dead]
-    pred_count = sum(1 for c in live_creatures if c.diet == 1)
-    herb_count = len(live_creatures) - pred_count
-    ratio_str = "∞" if pred_count == 0 else f"{herb_count/pred_count:.1f}"
+    pred_count     = sum(1 for c in live_creatures if c.diet == 1)
+    herb_count     = len(live_creatures) - pred_count
+    ratio_str      = "∞" if pred_count == 0 else f"{herb_count / pred_count:.1f}"
 
-    # Calculate separate stats for herbs/preds
+    # Separate means
     if herb_count > 0:
         herb_speed = np.mean([c.speed for c in live_creatures if c.diet == 0])
-        herb_size  = np.mean([c.size_factor for c in live_creatures if c.diet == 0])
+        herb_size  = np.mean([c.effective_size_factor() for c in live_creatures if c.diet == 0])
         herb_fear  = np.mean([c.fear for c in live_creatures if c.diet == 0])
     else:
         herb_speed = herb_size = herb_fear = 0.0
 
     if pred_count > 0:
         pred_speed = np.mean([c.speed for c in live_creatures if c.diet == 1])
-        pred_size  = np.mean([c.size_factor for c in live_creatures if c.diet == 1])
+        pred_size  = np.mean([c.effective_size_factor() for c in live_creatures if c.diet == 1])
         pred_fear  = np.mean([c.fear for c in live_creatures if c.diet == 1])
     else:
         pred_speed = pred_size = pred_fear = 0.0
@@ -233,22 +229,20 @@ class Food:
 
 class Creature:
     """
-    v0.5.5 changes:
-     - Added optional usage of eating/fighting_countdown
-     - 'Division' reproduction (parent/child each half parent's old size)
-     - run_away heading fix
-     - fix stats to separate herb/pred
+    v0.5.6:
+      - Removed 'division' in reproduction.
+      - Size now scales with energy (effective_size_factor()).
+      - Kept eating/fighting countdowns, run_away heading fix, etc.
     """
     def __init__(self, x, y, father_dna=None):
         self.x = x
         self.y = y
         self.energy = 100
-        self.age = 0
+        self.age    = 0
         self.heading = random.random() * 2.0 * math.pi
-        self.dead = False
+        self.dead   = False
 
-        # CHANGE: integrate countdowns (if you want to use them fully)
-        self.eating_countdown = 0
+        self.eating_countdown   = 0
         self.fighting_countdown = 0
 
         if father_dna:
@@ -256,7 +250,7 @@ class Creature:
             fear  = father_dna[1]
             if random.random() < FEAR_MUTATION_CHANCE:
                 fear += random.uniform(-0.05, 0.05)
-                fear = min(max(0.0, fear), 1.0)
+                fear  = min(max(0.0, fear), 1.0)
 
             size_factor = father_dna[2]
             if random.random() < SIZE_MUTATION_CHANCE:
@@ -272,28 +266,29 @@ class Creature:
 
             self.dna = [speed, fear, size_factor, longevity, diet]
 
+            # Occasional big speed mutation
             if random.random() < MUTATION_RATE:
                 self.dna[0] *= random.uniform(0.5, 2.0)
                 self.dna[0] = np.clip(self.dna[0], MIN_SPEED, MAX_SPEED)
         else:
             self.dna = [
-                random.uniform(1.5, 3.0),
-                random.uniform(0.0, 0.2),
-                random.uniform(MIN_SIZE, 1.2),
-                random.uniform(0.8, 1.2),
-                0
+                random.uniform(1.5, 3.0),        # speed
+                random.uniform(0.0, 0.2),        # fear
+                random.uniform(MIN_SIZE, 1.2),   # size_factor
+                random.uniform(0.8, 1.2),        # longevity
+                0                                # diet (0=herb, 1=pred)
             ]
 
         self.speed       = self.dna[0]
         self.fear        = self.dna[1]
-        self.size_factor = self.dna[2]
+        self.size_factor = self.dna[2]    # "base" size; actual size depends on energy
         self.longevity   = self.dna[3]
         self.diet        = int(self.dna[4])
 
         self.update_color()
 
     def update_color(self):
-        """Update creature color based on current attributes"""
+        """Update creature color based on current attributes."""
         self.color = calculate_creature_color(self.energy, self.speed, self.fear)
 
     def _get_mutation_type(self, father_dna):
@@ -317,24 +312,35 @@ class Creature:
     def max_age(self):
         return AGE_BASE * self.longevity
 
-    def strength(self):
-        return self.size_factor * (1.0 + 0.5*(self.energy/100.0))
-
-    def max_energy_capacity(self):
-        return 100 + (self.size_factor - 1.0)*50
+    # CHANGE: Now we incorporate energy into actual size
+    def effective_size_factor(self):
+        """
+        At 0 energy => 70% of base size_factor.
+        At 100+ energy => 100% of base size_factor.
+        """
+        return self.size_factor * (0.7 + 0.3 * (self.energy / 100.0))
 
     def radius(self):
-        return 6 * self.size_factor
+        return 6 * self.effective_size_factor()
+
+    def strength(self):
+        """
+        Strength calculation can also incorporate the effective_size_factor 
+        plus a small bonus from energy itself.
+        """
+        return self.effective_size_factor() * (1.0 + 0.5*(self.energy / 100.0))
+
+    def max_energy_capacity(self):
+        return 100 + (self.effective_size_factor() - 1.0)*50
 
     def update(self, all_creatures, foods):
-        """Main logic each frame."""
         if self.dead:
             return ("starved", None)
 
         self.age += 1
         self.energy -= IDLE_COST
 
-        # CHANGE: if we're 'busy' eating or fighting, skip other actions.
+        # If busy, skip other actions
         if self.eating_countdown > 0:
             self.eating_countdown -= 1
             return ("eating", None)
@@ -344,21 +350,22 @@ class Creature:
 
         # Fear cost
         if self.diet == 0 and self.fear > FEAR_THRESHOLD_HERB:
-            self.energy -= FEAR_COST_BASE * self.fear * self.size_factor
+            self.energy -= FEAR_COST_BASE * self.fear * self.effective_size_factor()
         elif self.diet == 1 and self.fear > PRED_FEAR_THRESHOLD:
-            self.energy -= FEAR_COST_BASE * self.fear * (self.size_factor * 0.5)
+            self.energy -= FEAR_COST_BASE * self.fear * (self.effective_size_factor() * 0.5)
 
-        # Movement cost
+        # Movement/size cost
         self.energy -= BASE_ENERGY_LOSS_PER_MOVE
-        self.energy -= (self.size_factor * SIZE_ENERGY_LOSS_FACTOR)
+        self.energy -= (self.effective_size_factor() * SIZE_ENERGY_LOSS_FACTOR)
         self.energy = max(self.energy, 0)
 
         self.update_color()
 
         if self.diet == 0:
-            # Herbivore logic
+            # --- Herbivore logic ---
             if self.fear > FEAR_THRESHOLD_HERB:
-                predator, distp = self.find_nearest(all_creatures, lambda c: c is not self and c.diet == 1 and not c.dead)
+                predator, distp = self.find_nearest(all_creatures, 
+                                    lambda c: c is not self and c.diet == 1 and not c.dead)
                 if predator and distp < 120:
                     self.run_away(predator.x, predator.y)
                     self.wrap_screen()
@@ -368,10 +375,9 @@ class Creature:
             if food_t and distf < SIGHT_RANGE:
                 if not self.is_line_blocked(food_t.x, food_t.y, all_creatures):
                     self.move_toward(food_t.x, food_t.y)
-                    if distance(self.x, self.y, food_t.x, food_t.y) < (6 + self.size_factor*4):
+                    if distance(self.x, self.y, food_t.x, food_t.y) < (6 + self.effective_size_factor()*4):
                         self.energy = min(self.max_energy_capacity(), self.energy + ENERGY_GAIN_FROM_FOOD)
                         foods.remove(food_t)
-                        # CHANGE: set countdown if we want a short 'eating' pause
                         self.eating_countdown = EATING_TIME_FRAMES
                 else:
                     self.random_walk()
@@ -379,27 +385,35 @@ class Creature:
                 self.random_walk()
 
         else:
-            # Predator logic
+            # --- Predator logic ---
             ctarget, distc = self.find_nearest(all_creatures, lambda c: c is not self and not c.dead)
             if ctarget and distc < SIGHT_RANGE:
                 if not self.is_line_blocked(ctarget.x, ctarget.y, all_creatures):
-                    if ctarget.diet == 1:  # Another predator
-                        if self.fear > PRED_FEAR_THRESHOLD and (ctarget.size_factor > self.size_factor*SIZE_DOMINANCE_RATIO):
+                    if ctarget.diet == 1:
+                        # Another predator
+                        if self.fear > PRED_FEAR_THRESHOLD and (
+                            ctarget.effective_size_factor() > self.effective_size_factor()*SIZE_DOMINANCE_RATIO
+                        ):
                             self.run_away(ctarget.x, ctarget.y)
                         else:
                             self.move_toward(ctarget.x, ctarget.y)
-                            if distance(self.x, self.y, ctarget.x, ctarget.y) < (10 + self.size_factor*4 + ctarget.size_factor*4):
+                            if distance(self.x, self.y, ctarget.x, ctarget.y) < (
+                                10 + self.effective_size_factor()*4 + ctarget.effective_size_factor()*4
+                            ):
                                 return self.predator_fight(ctarget)
-                    else:  # ctarget.diet == 0
-                        if (ctarget.size_factor > self.size_factor*HERB_SIZE_DOMINANCE_RATIO) and (self.fear > PRED_FEAR_THRESHOLD):
+                    else:
+                        # ctarget is herbivore
+                        if (ctarget.effective_size_factor() > self.effective_size_factor()*HERB_SIZE_DOMINANCE_RATIO
+                           ) and (self.fear > PRED_FEAR_THRESHOLD):
                             self.run_away(ctarget.x, ctarget.y)
                         else:
                             self.move_toward(ctarget.x, ctarget.y)
-                            if distance(self.x, self.y, ctarget.x, ctarget.y) < (10 + self.size_factor*4 + ctarget.size_factor*4):
-                                gain = ENERGY_GAIN_FROM_PREY * ctarget.size_factor
+                            if distance(self.x, self.y, ctarget.x, ctarget.y) < (
+                                10 + self.effective_size_factor()*4 + ctarget.effective_size_factor()*4
+                            ):
+                                gain = ENERGY_GAIN_FROM_PREY * ctarget.effective_size_factor()
                                 self.energy = min(self.max_energy_capacity(), self.energy + gain)
                                 ctarget.dead = True
-                                # CHANGE: short fighting pause
                                 self.fighting_countdown = FIGHTING_TIME_FRAMES
                                 return ("ate_creature", ctarget)
                 else:
@@ -415,18 +429,17 @@ class Creature:
         if other.dead:
             return ("alive", None)
 
-        # Possibly give attacking advantage ~ 30% of the time
         if random.random() < 0.3:
-            my_str = self.strength() * AMBUSH_BONUS
-            their_str = other.strength()
+            my_str     = self.strength() * AMBUSH_BONUS
+            their_str  = other.strength()
         else:
-            my_str = self.strength()
-            their_str = other.strength()
+            my_str     = self.strength()
+            their_str  = other.strength()
 
         if my_str > their_str:
-            gain = ENERGY_GAIN_FROM_PREY * other.size_factor
+            gain = ENERGY_GAIN_FROM_PREY * other.effective_size_factor()
             self.energy = min(self.max_energy_capacity(), self.energy + gain)
-            other.dead = True
+            other.dead  = True
             self.fighting_countdown = FIGHTING_TIME_FRAMES
             if other.diet == 0:
                 return ("ate_creature", other)
@@ -437,6 +450,7 @@ class Creature:
                 return ("ate_creature", self)
             return ("pred_fight", self)
         else:
+            # If strengths are equal, coin toss:
             if random.random() < 0.5:
                 other.dead = True
                 self.fighting_countdown = FIGHTING_TIME_FRAMES
@@ -461,39 +475,31 @@ class Creature:
             return ("aged", None)
         return ("alive", None)
 
-    # CHANGE: halved size in reproduction => 'division' style
+    # CHANGE: Reverted to standard reproduction approach (no size halving).
     def reproduce(self, creatures, foods):
         if self.dead or self.energy < 80 or self.size_factor < 0.7:
             return None
 
-        # Save old size to pass to child
-        old_size = self.size_factor
-        # Halve the parent's size
-        self.size_factor *= 0.5
-
-        pop_size = len(creatures)
+        pop_size   = len(creatures)
         food_count = len(foods)
-        ratio_food_pop = food_count / pop_size if pop_size > 0 else 1
-        ratio_pop_cap = pop_size / MAX_CREATURES
+        ratio_food_pop = food_count / pop_size if pop_size > 0 else 1.0
+        ratio_pop_cap  = pop_size / MAX_CREATURES
 
         chance = ENV_REPRO_CHANCE_BASE
         chance += ENV_REPRO_FOOD_FACTOR * ratio_food_pop
-        chance -= ENV_REPRO_POP_FACTOR * ratio_pop_cap
+        chance -= ENV_REPRO_POP_FACTOR  * ratio_pop_cap
         chance = min(max(chance, 0.0), 1.0)
 
         if random.random() < chance:
             self.energy -= REPRODUCE_ENERGY_COST
             child_dna = list(self.dna)
-            
-            # Possibly flip diet if environment is tough
+
             herb_count = sum(1 for c in creatures if c and c.diet == 0 and not c.dead)
             pred_count = pop_size - herb_count
             flip_chance = BASE_DIET_FLIP_CHANCE
 
             if self.diet == 0:
                 if food_count < (herb_count * 0.7):
-                    flip_chance += 0.05
-                if (self.size_factor > 1.5 and ratio_food_pop < 0.5):
                     flip_chance += 0.05
                 if random.random() < flip_chance:
                     child_dna[4] = 1
@@ -503,13 +509,11 @@ class Creature:
                 if random.random() < flip_chance:
                     child_dna[4] = 0
 
-            # Give child the 'old size' (the parent's size pre-halving)
-            child_dna[2] = old_size * 0.5
-
             offx = random.gauss(0, 10)
             offy = random.gauss(0, 10)
             baby = Creature(self.x + offx, self.y + offy, father_dna=child_dna)
             return baby
+
         return None
 
     def random_walk(self):
@@ -519,16 +523,15 @@ class Creature:
         self.x += dx
         self.y += dy
 
-    # CHANGE: fix heading so that it *faces away* from the threat
     def run_away(self, ox, oy):
         dx = self.x - ox
         dy = self.y - oy
         distv = distance(self.x, self.y, ox, oy)
         if distv > 1:
-            self.x += (dx/distv) * self.speed
-            self.y += (dy/distv) * self.speed
-            # Face away from predator
-            self.heading = math.atan2(- (oy - self.y), - (ox - self.x))
+            self.x += (dx / distv) * self.speed
+            self.y += (dy / distv) * self.speed
+            # Face away from the threat
+            self.heading = math.atan2(-(oy - self.y), -(ox - self.x))
         else:
             self.random_walk()
 
@@ -537,8 +540,8 @@ class Creature:
         dy = ty - self.y
         distv = distance(self.x, self.y, tx, ty)
         if distv > 1:
-            self.x += (dx/distv) * self.speed
-            self.y += (dy/distv) * self.speed
+            self.x += (dx / distv) * self.speed
+            self.y += (dy / distv) * self.speed
             self.heading = math.atan2(dy, dx)
         else:
             self.random_walk()
@@ -577,13 +580,14 @@ class Creature:
     def draw(self, surface):
         if self.dead:
             return
-        sz = int(8 * self.size_factor)
+        sz = int(8 * self.effective_size_factor())
         if self.diet == 0:
+            # Herbivore => circle
             pygame.draw.circle(surface, self.color, (int(self.x), int(self.y)), sz)
         else:
-            # Predator "cursor" shape
-            tip_x = self.x + math.cos(self.heading) * sz * 2.5
-            tip_y = self.y + math.sin(self.heading) * sz * 2.5
+            # Predator => "cursor" shape
+            tip_x  = self.x + math.cos(self.heading) * sz * 2.5
+            tip_y  = self.y + math.sin(self.heading) * sz * 2.5
             base_x = self.x - math.cos(self.heading) * sz * 0.5
             base_y = self.y - math.sin(self.heading) * sz * 0.5
             perp_x = math.cos(self.heading + math.pi/2) * sz * 0.4
@@ -604,30 +608,30 @@ creatures = []
 for _ in range(INITIAL_HERBIVORES):
     c = Creature(random.randint(100, 1100), random.randint(100, 700))
     c.dna[4] = 0
-    c.diet = 0
+    c.diet   = 0
     creatures.append(c)
 
 for _ in range(INITIAL_PREDATORS):
     c = Creature(random.randint(100, 1100), random.randint(100, 700))
     c.dna[4] = 1
-    c.diet = 1
+    c.diet   = 1
     creatures.append(c)
 
 foods = [Food() for _ in range(INITIAL_FOOD)]
 
-paused = False
-frames = 0
-sim_frames = 0
+paused          = False
+frames          = 0
+sim_frames      = 0
 population_history = deque(maxlen=300)
-pred_ratio_history = deque(maxlen=300)
+pred_ratio_history  = deque(maxlen=300)
 
-death_log = {'starved': 0, 'aged': 0, 'hunted': 0}
+death_log        = {'starved': 0, 'aged': 0, 'hunted': 0}
 mutation_tracker = Counter()
 
 day_cycle_frame = 0
-day_count = 0
-fps_sample_timer = 0.0
-avg_frame_time = 0.0
+day_count       = 0
+fps_sample_timer= 0.0
+avg_frame_time  = 0.0
 
 running = True
 
@@ -636,7 +640,7 @@ while running:
     frames += 1
 
     fps_sample_timer += dt
-    avg_frame_time = 0.9*avg_frame_time + 0.1*dt
+    avg_frame_time = 0.9 * avg_frame_time + 0.1 * dt
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -651,15 +655,16 @@ while running:
         if day_cycle_frame == 0:
             day_count += 1
 
+    # Day/night cycle interpolation
     alpha = day_cycle_frame/(DAY_LENGTH-1) if (DAY_LENGTH > 1) else 1.0
     if alpha < 0.5:
-        sub_a = alpha/0.5
+        sub_a = alpha / 0.5
         bg_color = interpolate_color(NIGHT_COLOR, DAY_COLOR, sub_a)
-        is_day = True
+        is_day   = True
     else:
-        sub_a = (alpha-0.5)/0.5
+        sub_a = (alpha - 0.5) / 0.5
         bg_color = interpolate_color(DAY_COLOR, NIGHT_COLOR, sub_a)
-        is_day = False
+        is_day   = False
 
     screen.fill(bg_color)
 
@@ -675,7 +680,7 @@ while running:
                     death_log["starved"] += 1
                     write_log(f"Death: starved (speed={c.speed:.2f})")
                     dead.append(c)
-                    food_chunks = 1 + int(c.size_factor*2)
+                    food_chunks = 1 + int(c.effective_size_factor()*2)
                     for _ in range(food_chunks):
                         if random.random() < 0.3:
                             foods.append(Food())
@@ -684,19 +689,20 @@ while running:
                     death_log["aged"] += 1
                     write_log(f"Death: aged (speed={c.speed:.2f})")
                     dead.append(c)
-                    food_chunks = 1 + int(c.size_factor*2)
+                    food_chunks = 1 + int(c.effective_size_factor()*2)
                     for _ in range(food_chunks):
                         if random.random() < 0.3:
                             foods.append(Food())
 
                 elif status == "ate_creature":
-                    if other and other.diet == 0:  # Only count herbivore as 'hunted'
+                    # If we ate a herbivore, it's a 'hunted' kill
+                    if other and other.diet == 0:
                         death_log["hunted"] += 1
                     reason = "hunted" if (other and other.diet == 0) else "pred_fight"
                     if other:
                         write_log(f"Death: {reason} (speed={other.speed:.2f})")
                         dead.append(other)
-                        food_chunks = 1 + int(other.size_factor*2)
+                        food_chunks = 1 + int(other.effective_size_factor()*2)
                         for _ in range(food_chunks):
                             if random.random() < 0.3:
                                 foods.append(Food())
@@ -706,12 +712,12 @@ while running:
                     if other:
                         write_log(f"Death: pred_fight (speed={other.speed:.2f})")
                         dead.append(other)
-                        food_chunks = 1 + int(other.size_factor*2)
+                        food_chunks = 1 + int(other.effective_size_factor()*2)
                         for _ in range(food_chunks):
                             if random.random() < 0.3:
                                 foods.append(Food())
 
-                # "alive", "eating", "fighting" just continue
+                # "alive", "eating", "fighting" => no immediate action
 
                 # Attempt reproduction
                 child = c.reproduce(creatures, foods)
@@ -738,8 +744,8 @@ while running:
 
         resolve_collisions(creatures)
 
-        pop_size = len(creatures)
-        pred_count = sum(1 for cr in creatures if cr and cr.diet == 1 and not cr.dead)
+        pop_size  = len(creatures)
+        pred_count= sum(1 for cr in creatures if cr and cr.diet == 1 and not cr.dead)
         population_history.append(pop_size)
         ratio = pred_count/pop_size if pop_size > 0 else 0
         pred_ratio_history.append(ratio)
@@ -748,7 +754,7 @@ while running:
             if random.random() < DAYTIME_FOOD_SPAWN_CHANCE:
                 foods.append(Food())
 
-    # Draw
+    # ---------- DRAW SECTION ----------
     for f in foods:
         pygame.draw.circle(screen, FOOD_COLOR, (int(f.x), int(f.y)), 4)
 
@@ -778,7 +784,7 @@ while running:
         points_pop = []
         for i, val in enumerate(population_history):
             xx = graph_x + graph_w - (len(population_history) - i)*2
-            yy = graph_y + graph_h - ((val/MAX_CREATURES)*graph_h)
+            yy = graph_y + graph_h - ((val / MAX_CREATURES) * graph_h)
             points_pop.append((xx, yy))
         pygame.draw.lines(screen, GRAPH_COLOR, False, points_pop, 2)
 
@@ -787,7 +793,7 @@ while running:
         points_pred = []
         for i, ratio_val in enumerate(pred_ratio_history):
             xx = graph_x + graph_w - (len(pred_ratio_history) - i)*2
-            yy = graph_y + graph_h - (ratio_val*graph_h)
+            yy = graph_y + graph_h - (ratio_val * graph_h)
             points_pred.append((xx, yy))
         pygame.draw.lines(screen, PREDATOR_GRAPH_COLOR, False, points_pred, 2)
 
